@@ -790,20 +790,22 @@ gap: 15;
     text-align: center;
   }
    .footer-about {
+    width: 100%;
+    padding: 0 10px;
     text-align: center;
-    min-width: 100%;
   }
-  .footer-about p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #ccc;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;       /* ✅ ensures wrapping */
-  text-align: justify;
-  max-width: 95%;
-  margin: 0 auto;
-}
+   .footer-about p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 12px;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;   /* ✅ forces wrap */
+    word-break: break-word !important;
+  }
 
   .social-links a{
     display: flex;
@@ -813,9 +815,6 @@ gap: 15;
   .footer-about, .footer-links, .footer-social {
     min-width: 100%;
     
-  }
-  .footer-about p{
-    padding:0 10px;
   }
 
   .footer {
