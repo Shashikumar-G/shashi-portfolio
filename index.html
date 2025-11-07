@@ -240,7 +240,7 @@
           <label for="subject">Subject:</label>
           <input type="text" name="Subject" id="subject" placeholder="your subject" required>
           <label for="mess">Message:</label>
-          <textarea name="message" id="mess" maxlength="500" style="width: 400px; height: 100px;" required>
+          <textarea name="message" id="mess" maxlength="500"  required>
             
           </textarea>
           
@@ -622,7 +622,21 @@ body{
   text-align: left;
   
 }
+@media (max-width: 768px) {
+  #container3 {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  #card3 {
+    width: 70%;
+    text-align: center;
+  }
+
+  #card3-body label {
+    text-align: left;
+  }
+}
 
 #card3-header {
   text-align: center;
@@ -645,10 +659,11 @@ body{
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 14px;
+  display: flex;
 }
 
 #card3-body textarea {
-  resize: none;
+ 
   height: 100px;
 }
 
@@ -679,6 +694,7 @@ html{
   padding: 40px 0 20px;
   font-family:'poppins',sans-serif;
   margin-top: 100px;
+  width: 100%;
 }
 .footer-container{
   display: flex;
@@ -693,7 +709,7 @@ html{
 }
 .footer-about{
   flex: 1;
-  min-width: 250px;
+  min-width: 30px;
 }
 .footer-about h3{
  font-size: 1.4rem;
@@ -766,6 +782,7 @@ gap: 15;
     align-items: center;
     text-align: center;
     height: auto;
+    width: 100%;
   }
 
   .footer-about, .footer-links, .footer-social {
